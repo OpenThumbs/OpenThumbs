@@ -1,0 +1,18 @@
+[package]
+name = "dataset-meta"
+description = "Metadata store (datasets, versions, refs, lineage, users) on PostgreSQL or SQLite"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dataset-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sqlx.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+ulid.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true

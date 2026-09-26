@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>OpenThumbs</title>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <div class="shell" id="shell">
+    <aside class="sidebar" aria-label="Primary">
+      <a class="brand" href="#/datasets"><span class="brand-mark" aria-hidden="true">◆</span> OpenThumbs</a>
+      <nav class="nav">
+        <div class="nav-label">Workspace</div>
+        <a class="nav-item" href="#/datasets" data-nav="datasets"><span class="nav-icon" aria-hidden="true">▤</span>Datasets</a>
+        <a class="nav-item" href="#/lineage" data-nav="lineage"><span class="nav-icon" aria-hidden="true">⌥</span>Lineage</a>
+        <a class="nav-item" href="#/transfers" data-nav="transfers"><span class="nav-icon" aria-hidden="true">⇅</span>Transfers<span class="nav-count" id="nav-transfers"></span></a>
+        <div class="nav-label" id="recent-label" hidden>Recent</div>
+        <div id="recent"></div>
+      </nav>
+      <div class="sidebar-foot">
+        <a class="nav-item" href="#/settings" data-nav="settings"><span class="nav-icon" aria-hidden="true">⚙</span>Settings</a>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="search-trigger" data-action="palette" aria-label="Search (Ctrl+K)">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <span>Search datasets, versions, tags…</span>
+          <kbd id="kbd-hint">Ctrl K</kbd>
+        </button>
+        <div class="topbar-right" id="account"></div>
+      </header>
+      <main class="page" id="page" tabindex="-1"></main>
+    </div>
+
+    <footer class="statusbar" id="statusbar" aria-live="polite"></footer>
+  </div>
+
+  <aside class="inspector" id="inspector" aria-hidden="true" aria-label="Details"></aside>
+  <div class="overlay" id="overlay" hidden></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+</body>
+</html>

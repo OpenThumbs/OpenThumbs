@@ -1,0 +1,22 @@
+[package]
+name = "dataset-storage"
+description = "Content-addressed blob storage (local filesystem; S3 planned) and resumable multipart uploads"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dataset-core.workspace = true
+async-trait.workspace = true
+bytes.workspace = true
+futures-util.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+tracing.workspace = true
+ulid.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true
